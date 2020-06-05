@@ -1,0 +1,1153 @@
+:root{
+  --background: #e7eef1;
+  --red: red ;
+  --blue: blue;
+  --yellow: yellow;
+  --skin: #ffc966;
+  --brown: brown;
+  --black: black;
+}
+
+body{
+  margin: 0;
+}
+
+.mario-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  justify-content: center;
+}
+
+.mario-block{
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  width: 16em;
+  height: 17em;
+}
+
+.mario{
+  display: block;
+  width: 1em;
+  height: 1em;
+  background-color: var(--background);
+  animation-duration: 550ms;
+  animation-name: mario-walking;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mario-walking{
+  0%{
+      /* Mario lEFT */
+      box-shadow: 0em 0em var(--background),
+      1em 0em var(--background),
+      2em 0em var(--background),
+      3em 0em var(--background),
+      4em 0em var(--background),
+      5em 0em var(--background),
+      6em 0em var(--background),
+      7em 0em var(--background),
+      8em 0em var(--background),
+      9em 0em var(--background),
+      10em 0em var(--background),
+      11em 0em var(--background),
+      12em 0em var(--background),
+      13em 0em var(--background),
+      14em 0em var(--background),
+      15em 0em var(--background),
+
+      /* Second Row */
+      0em 1em var(--background),
+      1em 1em var(--background),
+      2em 1em var(--background),
+      3em 1em var(--background),
+      4em 1em var(--background),
+
+      5em 1em var(--red),
+      6em 1em var(--red),
+      7em 1em var(--red),
+      8em 1em var(--red),
+      9em 1em var(--red),
+
+      10em 1em var(--background),
+      11em 1em var(--background),
+
+      12em 1em var(--background),
+      13em 1em var(--background),
+      14em 1em var(--background),
+
+      15em 1em var(--background),
+      
+      /* 3° Row */
+      0em 2em var(--background),
+      1em 2em var(--background),
+      2em 2em var(--background),
+      3em 2em var(--background),
+      
+      4em 2em var(--red),
+      5em 2em var(--red),
+      6em 2em var(--red),
+      7em 2em var(--red),
+      8em 2em var(--red),
+      9em 2em var(--red),
+      10em 2em var(--red),
+      11em 2em var(--red),
+      12em 2em var(--red),
+
+      13em 2em var(--background),
+      14em 2em var(--background),
+
+      15em 2em var(--background),
+      
+      /* 4° Row */
+
+      0em 3em var(--background),
+      1em 3em var(--background),
+      2em 3em var(--background),
+      3em 3em var(--background),
+      
+      4em 3em var(--brown),
+      5em 3em var(--brown),
+      6em 3em var(--brown),
+      
+      7em 3em var(--skin),
+      8em 3em var(--skin),
+      
+      9em 3em var(--black),
+      
+      10em 3em var(--skin),
+      
+      11em 3em var(--background),
+      
+      12em 3em var(--background),
+      13em 3em var(--background),
+      14em 3em var(--background),
+      
+      15em 3em var(--background),
+
+      /* 5° Row */
+      
+      0em 4em var(--background),
+      1em 4em var(--background),
+      2em 4em var(--background),
+      
+      3em 4em var(--brown),
+      4em 4em var(--skin),
+      5em 4em var(--brown),
+      6em 4em var(--skin),
+      
+      7em 4em var(--skin),
+      8em 4em var(--skin),
+      
+      9em 4em var(--black),
+      
+      10em 4em var(--skin),
+      
+      11em 4em var(--skin),
+      
+      12em 4em var(--skin),
+      13em 4em var(--background),
+      14em 4em var(--background),
+      
+      15em 4em var(--background),
+      
+      /* 6° Row */
+
+      0em 5em var(--background),
+      1em 5em var(--background),
+      2em 5em var(--background),
+      
+      3em 5em var(--brown),
+      4em 5em var(--skin),
+      5em 5em var(--brown),
+      6em 5em var(--brown),
+      
+      7em 5em var(--skin),
+      8em 5em var(--skin),
+      
+      9em 5em var(--skin),
+      
+      10em 5em var(--black),
+      
+      11em 5em var(--skin),
+      
+      12em 5em var(--skin),
+      13em 5em var(--skin),
+      14em 5em var(--background),
+      
+      15em 5em var(--background),
+
+      /* 7° Row */
+
+      0em 6em var(--background),
+      1em 6em var(--background),
+      2em 6em var(--background),
+      
+      3em 6em var(--brown),
+      4em 6em var(--brown),
+
+      5em 6em var(--skin),
+      6em 6em var(--skin),
+      7em 6em var(--skin),
+      8em 6em var(--skin),
+      
+      9em 6em var(--black),
+      10em 6em var(--black),
+      11em 6em var(--black),
+      12em 6em var(--black),
+
+      13em 6em var(--background),
+      14em 6em var(--background),
+      
+      15em 6em var(--background),
+
+      /* 8° Row */
+
+      0em 7em var(--background),
+      1em 7em var(--background),
+      2em 7em var(--background),
+      3em 7em var(--background),
+      4em 7em var(--background),
+
+      5em 7em var(--skin),
+      6em 7em var(--skin),
+      7em 7em var(--skin),
+      8em 7em var(--skin),
+      9em 7em var(--skin),
+      10em 7em var(--skin),
+      11em 7em var(--skin),
+
+      12em 7em var(--background),
+      13em 7em var(--background),
+
+      14em 7em var(--background),
+      15em 7em var(--background),
+
+      /* 9° Row */
+
+      0em 8em var(--background),
+      1em 8em var(--background),
+      
+      2em 8em var(--background),
+      3em 8em var(--background),
+      4em 8em var(--red),
+      5em 8em var(--red),
+
+      6em 8em var(--blue),
+
+      7em 8em var(--red),
+      8em 8em var(--red),
+      9em 8em var(--red),
+
+      10em 8em var(--background),
+
+      11em 8em var(--background),
+      12em 8em var(--background),
+
+      13em 8em var(--background),
+      14em 8em var(--background),
+
+      15em 8em var(--background),
+      
+      /* 10° Row */
+
+      0em 9em var(--background),
+      1em 9em var(--background),
+      
+      2em 9em var(--background),
+      3em 9em var(--red),
+      4em 9em var(--red),
+      5em 9em var(--red),
+      6em 9em var(--blue),
+
+      7em 9em var(--blue),
+
+      8em 9em var(--blue),
+      9em 9em var(--red),
+      10em 9em var(--red),
+
+      11em 9em var(--background),
+
+      12em 9em var(--background),
+      13em 9em var(--background),
+
+      14em 9em var(--background),
+      15em 9em var(--background),
+      
+      /* 11° Row */
+
+      0em 10em var(--background),
+      1em 10em var(--background),
+      2em 10em var(--background),
+
+      3em 10em var(--red),
+      4em 10em var(--red),
+      5em 10em var(--red),
+      6em 10em var(--blue),
+
+      7em 10em var(--blue),
+      8em 10em var(--yellow),
+      9em 10em var(--blue),
+      10em 10em var(--blue),
+      11em 10em var(--skin),
+
+      12em 10em var(--background),
+      13em 10em var(--background),
+
+      14em 10em var(--background),
+      15em 10em var(--background),
+      
+      /* 12° Row */
+
+      0em 11em var(--background),
+
+      1em 11em var(--background),
+
+      2em 11em var(--background),
+      3em 11em var(--red),
+
+      4em 11em var(--red),
+      5em 11em var(--red),
+      6em 11em var(--red),
+      7em 11em var(--blue),
+
+      8em 11em var(--blue),
+
+      9em 11em var(--blue),
+      10em 11em var(--blue),
+      11em 11em var(--blue),
+      12em 11em var(--background),
+      13em 11em var(--background),
+
+      14em 11em var(--background),
+      15em 11em var(--background),
+      
+      /* 13° Row */
+
+      0em 12em var(--background),
+
+      1em 12em var(--background),
+
+      2em 12em var(--background),
+      3em 12em var(--red),
+
+      4em 12em var(--red),
+      5em 12em var(--red),
+      6em 12em var(--skin),
+      7em 12em var(--skin),
+      8em 12em var(--skin),
+      9em 12em var(--blue),
+      10em 12em var(--blue),
+
+      11em 12em var(--blue),
+      12em 12em var(--background),
+      13em 12em var(--background),
+
+      14em 12em var(--background),
+      15em 12em var(--background),
+      
+      /* 14° Row */
+      
+      0em 13em var(--background),
+
+      1em 13em var(--background),
+
+      2em 13em var(--background),
+      3em 13em var(--background),
+
+      4em 13em var(--red),
+      5em 13em var(--red),
+      6em 13em var(--skin),
+      7em 13em var(--skin),
+      8em 13em var(--blue),
+      9em 13em var(--blue),
+      10em 13em var(--blue),
+
+      11em 13em var(--background),
+      12em 13em var(--background),
+      13em 13em var(--background),
+
+      14em 13em var(--background),
+      15em 13em var(--background),
+
+      /* 15° Row */
+
+      0em 14em var(--background),
+
+      1em 14em var(--background),
+
+      2em 14em var(--background),
+      3em 14em var(--background),
+
+      4em 14em var(--background),
+      5em 14em var(--blue),
+      6em 14em var(--blue),
+      7em 14em var(--blue),
+      8em 14em var(--blue),
+      9em 14em var(--blue),
+      10em 14em var(--background),
+      11em 14em var(--background),
+
+      12em 14em var(--background),
+      13em 14em var(--background),
+
+      14em 14em var(--background),
+      15em 14em var(--background),
+
+
+      /* 16° Row */
+                      
+      0em 15em var(--background),
+      1em 15em var(--background),
+      2em 15em var(--background),
+      3em 15em var(--background),
+      4em 15em var(--background),
+      5em 15em var(--brown),
+      6em 15em var(--brown),
+      7em 15em var(--brown),
+      8em 15em var(--blue),
+      9em 15em var(--brown),
+      10em 15em var(--brown),
+      11em 15em var(--brown),
+      12em 15em var(--background),
+      13em 15em var(--background),
+      14em 15em var(--background),
+      15em 15em var(--background),
+      
+      /* 16° Row */
+
+      0em 16em var(--background),
+      1em 16em var(--background),
+      2em 16em var(--background),
+      3em 16em var(--background),
+      4em 16em var(--background),
+      5em 16em var(--brown),
+      6em 16em var(--brown),
+      7em 16em var(--brown),
+      8em 16em var(--brown),
+      9em 16em var(--background),
+      10em 16em var(--background),
+      11em 16em var(--background),
+      12em 16em var(--background),
+      13em 16em var(--background),
+      14em 16em var(--background),
+      15em 16em var(--background);
+  }
+  50%{
+      /* Mario ROIGHT */
+      box-shadow: 0em 0em var(--background),
+      1em 0em var(--background),
+      2em 0em var(--background),
+      3em 0em var(--background),
+      4em 0em var(--background),
+      5em 0em var(--background),
+      6em 0em var(--background),
+      7em 0em var(--background),
+      8em 0em var(--background),
+      9em 0em var(--background),
+      10em 0em var(--background),
+      11em 0em var(--background),
+      12em 0em var(--background),
+      13em 0em var(--background),
+      14em 0em var(--background),
+      15em 0em var(--background),
+
+      /* Second Row */
+      0em 1em var(--background),
+      1em 1em var(--background),
+      2em 1em var(--background),
+      3em 1em var(--background),
+      4em 1em var(--background),
+
+      5em 1em var(--red),
+      6em 1em var(--red),
+      7em 1em var(--red),
+      8em 1em var(--red),
+      9em 1em var(--red),
+
+      10em 1em var(--background),
+      11em 1em var(--background),
+
+      12em 1em var(--background),
+      13em 1em var(--background),
+      14em 1em var(--background),
+
+      15em 1em var(--background),
+      
+      /* 3° Row */
+      0em 2em var(--background),
+      1em 2em var(--background),
+      2em 2em var(--background),
+      3em 2em var(--background),
+      
+      4em 2em var(--red),
+      5em 2em var(--red),
+      6em 2em var(--red),
+      7em 2em var(--red),
+      8em 2em var(--red),
+      9em 2em var(--red),
+      10em 2em var(--red),
+      11em 2em var(--red),
+      12em 2em var(--red),
+
+      13em 2em var(--background),
+      14em 2em var(--background),
+
+      15em 2em var(--background),
+      
+      /* 4° Row */
+
+      0em 3em var(--background),
+      1em 3em var(--background),
+      2em 3em var(--background),
+      3em 3em var(--background),
+      
+      4em 3em var(--brown),
+      5em 3em var(--brown),
+      6em 3em var(--brown),
+      
+      7em 3em var(--skin),
+      8em 3em var(--skin),
+      
+      9em 3em var(--black),
+      
+      10em 3em var(--skin),
+      
+      11em 3em var(--background),
+      
+      12em 3em var(--background),
+      13em 3em var(--background),
+      14em 3em var(--background),
+      
+      15em 3em var(--background),
+
+      /* 5° Row */
+      
+      0em 4em var(--background),
+      1em 4em var(--background),
+      2em 4em var(--background),
+      
+      3em 4em var(--brown),
+      4em 4em var(--skin),
+      5em 4em var(--brown),
+      6em 4em var(--skin),
+      
+      7em 4em var(--skin),
+      8em 4em var(--skin),
+      
+      9em 4em var(--black),
+      
+      10em 4em var(--skin),
+      
+      11em 4em var(--skin),
+      
+      12em 4em var(--skin),
+      13em 4em var(--background),
+      14em 4em var(--background),
+      
+      15em 4em var(--background),
+      
+      /* 6° Row */
+
+      0em 5em var(--background),
+      1em 5em var(--background),
+      2em 5em var(--background),
+      
+      3em 5em var(--brown),
+      4em 5em var(--skin),
+      5em 5em var(--brown),
+      6em 5em var(--brown),
+      
+      7em 5em var(--skin),
+      8em 5em var(--skin),
+      
+      9em 5em var(--skin),
+      
+      10em 5em var(--black),
+      
+      11em 5em var(--skin),
+      
+      12em 5em var(--skin),
+      13em 5em var(--skin),
+      14em 5em var(--background),
+      
+      15em 5em var(--background),
+
+      /* 7° Row */
+
+      0em 6em var(--background),
+      1em 6em var(--background),
+      2em 6em var(--background),
+      
+      3em 6em var(--brown),
+      4em 6em var(--brown),
+
+      5em 6em var(--skin),
+      6em 6em var(--skin),
+      7em 6em var(--skin),
+      8em 6em var(--skin),
+      
+      9em 6em var(--black),
+      10em 6em var(--black),
+      11em 6em var(--black),
+      12em 6em var(--black),
+
+      13em 6em var(--background),
+      14em 6em var(--background),
+      
+      15em 6em var(--background),
+
+      /* 8° Row */
+
+      0em 7em var(--background),
+      1em 7em var(--background),
+      2em 7em var(--background),
+      3em 7em var(--background),
+      4em 7em var(--background),
+
+      5em 7em var(--skin),
+      6em 7em var(--skin),
+      7em 7em var(--skin),
+      8em 7em var(--skin),
+      9em 7em var(--skin),
+      10em 7em var(--skin),
+      11em 7em var(--skin),
+
+      12em 7em var(--background),
+      13em 7em var(--background),
+
+      14em 7em var(--background),
+      15em 7em var(--background),
+
+      /* 9° Row */
+
+      0em 8em var(--background),
+      1em 8em var(--background),
+      
+      2em 8em var(--background),
+      3em 8em var(--background),
+      4em 8em var(--red),
+      5em 8em var(--red),
+
+      6em 8em var(--red),
+
+      7em 8em var(--red),
+      8em 8em var(--blue),
+      9em 8em var(--red),
+
+      10em 8em var(--background),
+
+      11em 8em var(--skin),
+      12em 8em var(--background),
+
+      13em 8em var(--background),
+      14em 8em var(--background),
+
+      15em 8em var(--background),
+      
+      /* 10° Row */
+
+      0em 9em var(--background),
+      1em 9em var(--background),            
+      2em 9em var(--background),
+      3em 9em var(--skin),
+      4em 9em var(--red),
+      5em 9em var(--red),
+      6em 9em var(--red),
+      7em 9em var(--red),
+      8em 9em var(--red),
+      9em 9em var(--red),
+      10em 9em var(--skin),
+      11em 9em var(--skin),
+      12em 9em var(--skin),
+      13em 9em var(--background),
+      14em 9em var(--background),
+      15em 9em var(--background),
+      
+      /* 11° Row */
+
+      0em 10em var(--background),
+      1em 10em var(--background),
+      2em 10em var(--skin),
+
+      3em 10em var(--skin),
+      4em 10em var(--blue),
+      5em 10em var(--red),
+      6em 10em var(--red),
+
+      7em 10em var(--red),
+      8em 10em var(--red),
+      9em 10em var(--red),
+      10em 10em var(--skin),
+      11em 10em var(--skin),
+
+      12em 10em var(--background),
+      13em 10em var(--background),
+
+      14em 10em var(--background),
+      15em 10em var(--background),
+      
+      /* 12° Row */
+
+      0em 11em var(--background),
+
+      1em 11em var(--background),
+
+      2em 11em var(--brown),
+      3em 11em var(--brown),
+
+      4em 11em var(--blue),
+      5em 11em var(--blue),
+      6em 11em var(--blue),
+      7em 11em var(--blue),
+
+      8em 11em var(--blue),
+
+      9em 11em var(--blue),
+      10em 11em var(--red),
+      11em 11em var(--background),
+      12em 11em var(--background),
+      13em 11em var(--background),
+
+      14em 11em var(--background),
+      15em 11em var(--background),
+      
+      /* 13° Row */
+
+      0em 12em var(--background),
+      1em 12em var(--background),
+      2em 12em var(--brown),
+      3em 12em var(--blue),
+      4em 12em var(--blue),
+      5em 12em var(--blue),
+      6em 12em var(--blue),
+      7em 12em var(--blue),
+      8em 12em var(--blue),
+      9em 12em var(--blue),
+      10em 12em var(--red),
+      11em 12em var(--background),
+      12em 12em var(--background),
+      13em 12em var(--background),
+      14em 12em var(--background),
+      15em 12em var(--background),
+
+      /* 14° Row */
+
+      0em 13em var(--background),
+      1em 13em var(--brown),
+      2em 13em var(--brown),
+      3em 13em var(--blue),
+      4em 13em var(--blue),
+      5em 13em var(--blue),
+      6em 13em var(--background),
+      7em 13em var(--blue),
+      8em 13em var(--blue),
+      9em 13em var(--blue),
+      10em 13em var(--background),
+      11em 13em var(--background),
+      12em 13em var(--background),
+      13em 13em var(--background),
+      14em 13em var(--background),
+      15em 13em var(--background),
+
+      /* 15° Row */
+
+      0em 14em var(--background),
+      1em 14em var(--brown),
+      2em 14em var(--background),
+      3em 14em var(--background),
+      4em 14em var(--background),
+      5em 14em var(--background),
+      6em 14em var(--brown),
+      7em 14em var(--brown),
+      8em 14em var(--brown),
+      9em 14em var(--background),
+      10em 14em var(--background),
+      11em 14em var(--background),
+      12em 14em var(--background),
+      13em 14em var(--background),
+      14em 14em var(--background),
+      15em 14em var(--background),
+
+
+      /* 16° Row */
+                      
+      0em 15em var(--background),
+      1em 15em var(--background),
+      2em 15em var(--background),
+      3em 15em var(--background),
+      4em 15em var(--background),
+      5em 15em var(--background),
+      6em 15em var(--brown),
+      7em 15em var(--brown),
+      8em 15em var(--brown),
+      9em 15em var(--brown),
+      10em 15em var(--background),
+      11em 15em var(--background),
+      12em 15em var(--background),
+      13em 15em var(--background),
+      14em 15em var(--background),
+      15em 15em var(--background);
+  }
+  100%{
+      /* Mario WALKINK */
+      box-shadow: 0em 0em var(--background),
+      1em 0em var(--background),
+      2em 0em var(--background),
+      3em 0em var(--background),
+      4em 0em var(--background),
+      5em 0em var(--background),
+      6em 0em var(--background),
+      7em 0em var(--background),
+      8em 0em var(--background),
+      9em 0em var(--background),
+      10em 0em var(--background),
+      11em 0em var(--background),
+      12em 0em var(--background),
+      13em 0em var(--background),
+      14em 0em var(--background),
+      15em 0em var(--background),
+
+      /* Second Row */
+      0em 1em var(--background),
+      1em 1em var(--background),
+      2em 1em var(--background),
+      3em 1em var(--background),
+      4em 1em var(--background),
+
+      5em 1em var(--red),
+      6em 1em var(--red),
+      7em 1em var(--red),
+      8em 1em var(--red),
+      9em 1em var(--red),
+
+      10em 1em var(--background),
+      11em 1em var(--background),
+
+      12em 1em var(--background),
+      13em 1em var(--background),
+      14em 1em var(--background),
+
+      15em 1em var(--background),
+      
+      /* 3° Row */
+      0em 2em var(--background),
+      1em 2em var(--background),
+      2em 2em var(--background),
+      3em 2em var(--background),
+      
+      4em 2em var(--red),
+      5em 2em var(--red),
+      6em 2em var(--red),
+      7em 2em var(--red),
+      8em 2em var(--red),
+      9em 2em var(--red),
+      10em 2em var(--red),
+      11em 2em var(--red),
+      12em 2em var(--red),
+
+      13em 2em var(--background),
+      14em 2em var(--background),
+
+      15em 2em var(--background),
+      
+      /* 4° Row */
+
+      0em 3em var(--background),
+      1em 3em var(--background),
+      2em 3em var(--background),
+      3em 3em var(--background),
+      
+      4em 3em var(--brown),
+      5em 3em var(--brown),
+      6em 3em var(--brown),
+      
+      7em 3em var(--skin),
+      8em 3em var(--skin),
+      
+      9em 3em var(--black),
+      
+      10em 3em var(--skin),
+      
+      11em 3em var(--background),
+      
+      12em 3em var(--background),
+      13em 3em var(--background),
+      14em 3em var(--background),
+      
+      15em 3em var(--background),
+
+      /* 5° Row */
+      
+      0em 4em var(--background),
+      1em 4em var(--background),
+      2em 4em var(--background),
+      
+      3em 4em var(--brown),
+      4em 4em var(--skin),
+      5em 4em var(--brown),
+      6em 4em var(--skin),
+      
+      7em 4em var(--skin),
+      8em 4em var(--skin),
+      
+      9em 4em var(--black),
+      
+      10em 4em var(--skin),
+      
+      11em 4em var(--skin),
+      
+      12em 4em var(--skin),
+      13em 4em var(--background),
+      14em 4em var(--background),
+      
+      15em 4em var(--background),
+      
+      /* 6° Row */
+
+      0em 5em var(--background),
+      1em 5em var(--background),
+      2em 5em var(--background),
+      
+      3em 5em var(--brown),
+      4em 5em var(--skin),
+      5em 5em var(--brown),
+      6em 5em var(--brown),
+      
+      7em 5em var(--skin),
+      8em 5em var(--skin),
+      
+      9em 5em var(--skin),
+      
+      10em 5em var(--black),
+      
+      11em 5em var(--skin),
+      
+      12em 5em var(--skin),
+      13em 5em var(--skin),
+      14em 5em var(--background),
+      
+      15em 5em var(--background),
+
+      /* 7° Row */
+
+      0em 6em var(--background),
+      1em 6em var(--background),
+      2em 6em var(--background),
+      
+      3em 6em var(--brown),
+      4em 6em var(--brown),
+
+      5em 6em var(--skin),
+      6em 6em var(--skin),
+      7em 6em var(--skin),
+      8em 6em var(--skin),
+      
+      9em 6em var(--black),
+      10em 6em var(--black),
+      11em 6em var(--black),
+      12em 6em var(--black),
+
+      13em 6em var(--background),
+      14em 6em var(--background),
+      
+      15em 6em var(--background),
+
+      /* 8° Row */
+
+      0em 7em var(--background),
+      1em 7em var(--background),
+      2em 7em var(--background),
+      3em 7em var(--background),
+      4em 7em var(--background),
+
+      5em 7em var(--skin),
+      6em 7em var(--skin),
+      7em 7em var(--skin),
+      8em 7em var(--skin),
+      9em 7em var(--skin),
+      10em 7em var(--skin),
+      11em 7em var(--skin),
+
+      12em 7em var(--background),
+      13em 7em var(--background),
+
+      14em 7em var(--background),
+      15em 7em var(--background),
+
+      /* 9° Row */
+
+      0em 8em var(--background),
+      1em 8em var(--background),
+      2em 8em var(--red),
+      3em 8em var(--red),
+      4em 8em var(--red),
+      5em 8em var(--red),
+      6em 8em var(--blue),
+      7em 8em var(--blue),
+      8em 8em var(--red),
+      9em 8em var(--red),
+      10em 8em var(--background),
+      11em 8em var(--background),
+      12em 8em var(--background),
+      13em 8em var(--background),
+      14em 8em var(--background),
+      15em 8em var(--background),
+      
+      /* 10° Row */
+
+      0em 9em var(--skin),
+      1em 9em var(--skin),
+      2em 9em var(--red),
+      3em 9em var(--red),
+      4em 9em var(--red),
+      5em 9em var(--red),
+      6em 9em var(--blue),
+      7em 9em var(--blue),
+      8em 9em var(--blue),
+      9em 9em var(--red),
+      10em 9em var(--red),
+      11em 9em var(--red),
+      12em 9em var(--skin),
+      13em 9em var(--skin),
+      14em 9em var(--skin),
+      15em 9em var(--background),
+      
+      /* 11° Row */
+      
+      0em 10em var(--skin),
+      1em 10em var(--skin),
+      2em 10em var(--skin),
+      3em 10em var(--background),
+      4em 10em var(--red),
+      5em 10em var(--red),
+      6em 10em var(--blue),
+      7em 10em var(--yellow),
+      8em 10em var(--blue),
+      9em 10em var(--blue),
+      10em 10em var(--blue),
+      11em 10em var(--red),
+      12em 10em var(--red),
+      13em 10em var(--skin),
+      14em 10em var(--skin),
+      15em 10em var(--background),
+      
+      /* 12° Row */
+
+      0em 11em var(--skin),
+      1em 11em var(--skin),
+      2em 11em var(--background),
+      3em 11em var(--background),
+      4em 11em var(--blue),
+      5em 11em var(--blue),
+      6em 11em var(--blue),
+      7em 11em var(--blue),
+      8em 11em var(--blue),
+      9em 11em var(--blue),
+      10em 11em var(--blue),
+      11em 11em var(--background),
+      12em 11em var(--background),
+      13em 11em var(--brown),
+      14em 11em var(--background),
+      15em 11em var(--background),
+      
+      /* 13° Row */
+
+      0em 12em var(--background),
+      1em 12em var(--background),
+      2em 12em var(--background),
+      3em 12em var(--blue),
+      4em 12em var(--blue),
+      5em 12em var(--blue),
+      6em 12em var(--blue),
+      7em 12em var(--blue),
+      8em 12em var(--blue),
+      9em 12em var(--blue),
+      10em 12em var(--blue),
+      11em 12em var(--blue),
+      12em 12em var(--brown),
+      13em 12em var(--brown),
+      14em 12em var(--background),
+      15em 12em var(--background),
+
+      /* 14° Row */
+
+      0em 13em var(--background),
+      1em 13em var(--background),
+      2em 13em var(--blue),
+      3em 13em var(--blue),
+      4em 13em var(--blue),
+      5em 13em var(--blue),
+      6em 13em var(--blue),
+      7em 13em var(--blue),
+      8em 13em var(--blue),
+      9em 13em var(--blue),
+      10em 13em var(--blue),
+      11em 13em var(--blue),
+      12em 13em var(--brown),
+      13em 13em var(--brown),
+      14em 13em var(--background),
+      15em 13em var(--background),
+
+      /* 15° Row */
+
+      0em 14em var(--background),
+      1em 14em var(--brown),
+      2em 14em var(--blue),
+      3em 14em var(--blue),
+      4em 14em var(--blue),
+      5em 14em var(--blue),
+      6em 14em var(--background),
+      7em 14em var(--background),
+      8em 14em var(--background),
+      9em 14em var(--blue),
+      10em 14em var(--blue),
+      11em 14em var(--blue),
+      12em 14em var(--brown),
+      13em 14em var(--brown),
+      14em 14em var(--background),
+      15em 14em var(--background),
+
+
+      /* 16° Row */
+                      
+      0em 15em var(--background),
+      1em 15em var(--brown),
+      2em 15em var(--brown),
+      3em 15em var(--brown),
+      4em 15em var(--background),
+      5em 15em var(--background),
+      6em 15em var(--background),
+      7em 15em var(--background),
+      8em 15em var(--background),
+      9em 15em var(--background),
+      10em 15em var(--background),
+      11em 15em var(--background),
+      12em 15em var(--background),
+      13em 15em var(--background),
+      14em 15em var(--background),
+      15em 15em var(--background),
+
+                                      
+      0em 16em var(--background),
+      1em 16em var(--background),
+      2em 16em var(--brown),
+      3em 16em var(--brown),
+      4em 16em var(--brown),
+      5em 16em var(--background),
+      6em 16em var(--background),
+      7em 16em var(--background),
+      8em 16em var(--background),
+      9em 16em var(--background),
+      10em 16em var(--background),
+      11em 16em var(--background),
+      12em 16em var(--background),
+      13em 16em var(--background),
+      14em 16em var(--background),
+      15em 16em var(--background);
+  }
+}
