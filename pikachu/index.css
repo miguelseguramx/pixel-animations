@@ -13,7 +13,12 @@
   overflow-x: scroll;
 }
 
+.pikachu-animated{
+  height: 60vh;
+}
+
 .pikachu-container {
+  height: 40vh;
   min-width: 1300px;
 }
 
@@ -22,6 +27,6 @@
   position: relative;
   margin: auto;
   width: 32em;
-  font-size: 10px;
+  font-size: 7px;
   height: 32em;
 }
