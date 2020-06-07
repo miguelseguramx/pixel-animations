@@ -1,0 +1,27 @@
+.pikachu-animated,
+.pikachu-container{
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  justify-content: center;
+}
+
+.pikachu-scroll{
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.pikachu-container {
+  min-width: 1300px;
+}
+
+.pikachu-container .pikachu-block{
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  width: 32em;
+  font-size: 10px;
+  height: 32em;
+}
